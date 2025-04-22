@@ -17,7 +17,7 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/tangyl2000/ipq6000
+  REPO_URL: https://github.com/suixin1314/ipq6000
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ipk/.config
