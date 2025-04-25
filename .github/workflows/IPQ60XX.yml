@@ -8,12 +8,12 @@ on:
 
 env:
   REPO_URL: https://github.com/LiBwrt/openwrt-6.x.git
-  REPO_BRANCH: kernel-6.12
+  REPO_BRANCH: main
   CONFIG_FILE: ipq60xx/ipq60xx-nss.config
   DIY_SCRIPT: diy-part2.sh
   CLASH_KERNEL: amd64
   CACHE_TOOLCHAIN: true
-  UPLOAD_BIN_DIR: true
+  UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
   FIRMWARE_TAG: IPQ60XX-nss
   TZ: Asia/Shanghai
