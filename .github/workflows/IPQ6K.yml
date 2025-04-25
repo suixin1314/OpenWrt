@@ -1,4 +1,4 @@
-name: IPQ60K
+name: IPQ6K
 
 on:
   repository_dispatch:
