@@ -4,6 +4,9 @@ name: IPQ60XX-nss
 #  workflow_dispatch:
 #  schedule:
 #    - cron: 0 19 * * *
+on:
+  repository_dispatch:
+  workflow_dispatch:
 
 env:
   REPO_URL: https://github.com/King-Of-Knights/openwrt-6.x.git
