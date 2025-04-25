@@ -1,4 +1,4 @@
-name: IPQ60XX-nss
+name: IPQ60XX
 
 on:
   repository_dispatch:
