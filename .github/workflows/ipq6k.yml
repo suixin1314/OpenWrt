@@ -51,11 +51,7 @@ jobs:
         chmod +x $DIY_P1_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
-        
-    - name: add openwrt-gecoosac
-      run: |
-        cd openwrt
-        git clone -b v1.0 https://github.com/lwb1978/openwrt-gecoosac package/openwrt-gecoosac
+    
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
