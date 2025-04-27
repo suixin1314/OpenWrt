@@ -35,13 +35,13 @@ jobs:
         echo "--------------------------硬盘信息--------------------------"
         echo "硬盘数量：$(ls /dev/sd* | grep -v [1-9] | wc -l)" && df -hT    
         
-    - name: Checkout
-      uses: actions/checkout@main
+
 
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
       run: |
+        docker rmi $(docker images -q)
         sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
         sudo docker image prune --all --force
         sudo -E apt-get -qq update
@@ -60,6 +60,9 @@ jobs:
         temp-reserve-mb: 100
         root-reserve-mb: 1024
         
+    - name: Checkout
+      uses: actions/checkout@main
+      
     - name: Clone source code
       working-directory: /workdir
       run: |
@@ -73,8 +76,9 @@ jobs:
         chmod +x $DIY_P1_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
-    
+        git clone -b v1.0 https://github.com/lwb1978/openwrt-gecoosac package/openwrt-gecoosac
 
+    
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
 
