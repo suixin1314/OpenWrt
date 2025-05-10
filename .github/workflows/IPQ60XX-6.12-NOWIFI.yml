@@ -114,7 +114,6 @@ jobs:
       id: compile
       run: |
         cd $OPENWRT_PATH
-        echo -e "$(nproc) thread compile"
         make -j1 V=s
         echo "status=success" >> $GITHUB_OUTPUT
         echo "DATE=$(date +"%Y-%m-%d %H:%M:%S")" >> $GITHUB_ENV
