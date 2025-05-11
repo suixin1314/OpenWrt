@@ -19,3 +19,4 @@ echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git' >>fe
 #echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages.git' >>feeds.conf.default
 #echo 'src-git small https://github.com/kenzok8/small.git' >>feeds.conf.default
 #echo 'src-git modemfeed https://github.com/koshev-msk/modemfeed.git' >>feeds.conf.default
+echo 'src-git ua3f https://github.com/SunBK201/UA3F.git' >>feeds.conf.default
