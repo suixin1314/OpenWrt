@@ -22,4 +22,4 @@ echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git' >>fe
 #echo 'src-git modemfeed https://github.com/koshev-msk/modemfeed.git' >>feeds.conf.default
 echo 'src-git ua3f https://github.com/SunBK201/UA3F.git' >>feeds.conf.default
 echo 'src-git openClash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
-echo 'src-git QModem https://github.com/FUjr/QModem.git' >> feeds.conf.default
+echo 'src-git qmodem https://github.com/FUjr/QModem.git;main' >> feeds.conf.default
