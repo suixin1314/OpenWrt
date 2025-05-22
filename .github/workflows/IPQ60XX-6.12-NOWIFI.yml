@@ -132,7 +132,8 @@ jobs:
       uses: actions/upload-artifact@main
       with:
         name: ${{ env.SOURCE_REPO }}-bin-${{ env.DEVICE_TARGET }}-${{ env.DEVICE_SUBTARGET }}-${{ env.FILE_DATE }}
-        path: ${{ env.OPENWRT_PATH }}/bin
+        path: ${{ env.OPENWRT_PATH }}
+        
 
     - name: Organize Files(整理文件)
       if: steps.compile.outputs.status == 'success'
