@@ -24,4 +24,4 @@ echo 'src-git OpenClash https://github.com/vernesong/OpenClash.git' >>feeds.conf
 #echo 'src-git qmodem https://github.com/FUjr/QModem.git' >> feeds.conf.default
 
 #添加passwall的包
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
+#git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
