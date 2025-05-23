@@ -118,8 +118,6 @@ jobs:
     - name: Download DL Package(下载DL软件包)
       run: |
         cd $OPENWRT_PATH
-        chmod +x $DIY_SCRIPT
-        $GITHUB_WORKSPACE/$DIY_SCRIPT
         make defconfig
         make download -j$(nproc)
         find dl -size -1024c -exec ls -l {} \;
