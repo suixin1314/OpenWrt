@@ -10,8 +10,8 @@ env:
   REPO_BRANCH: kernel-6.12
   CONFIG_FILE: ipq60xx/6.12-nowifi.config
   FEEDS_CONF: feeds.conf.default
-  DIY_P1_SH: diy-part1.sh
-  DIY_P2_SH: diy-part2.sh
+  DIY_P1_SH: ipq60xx/diy-part1.sh
+  DIY_P2_SH: ipq60xx/diy-part2.sh
   CLASH_KERNEL: amd64
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
