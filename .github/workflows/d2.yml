@@ -18,9 +18,11 @@ on:
 
 env:
   #REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_URL: https://github.com/immortalwrt/immortalwrt.git
+  #REPO_URL: https://github.com/immortalwrt/immortalwrt.git
+  REPO_URL: https://github.com/openwrt/openwrt.git
   #REPO_BRANCH: master
-  REPO_BRANCH: openwrt-21.02
+  #REPO_BRANCH: openwrt-21.02
+  REPO_BRANCH: openwrt-22.03
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: d2/.config
   DIY_P1_SH: d2/diy-part1.sh
