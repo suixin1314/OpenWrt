@@ -1,4 +1,4 @@
-#!/bin/bash
+##!/bin/bash
 #
 # https://github.com/P3TERX/Actions-OpenWrt
 # File name: diy-part1.sh
@@ -11,7 +11,7 @@
 #
 
 # Uncomment a feed source
-sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
 echo " " >> feeds.conf.default
