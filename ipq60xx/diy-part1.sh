@@ -35,3 +35,37 @@ rm -rf feeds/luci/applications/luci-app-serverchan
 # msd_lite
 git clone --depth=1 https://github.com/ximiTech/luci-app-msd_lite package/luci-app-msd_lite
 git clone --depth=1 https://github.com/ximiTech/msd_lite package/msd_lite
+
+mkdir -p package/custom/python-netifaces
+
+# 创建 Makefile
+cat > package/custom/python-netifaces/Makefile << 'EOF'
+include $(TOPDIR)/rules.mk
+
+PKG_NAME:=python3-netifaces
+PKG_VERSION:=0.11.0
+PKG_RELEASE:=1
+
+PYPI_NAME:=netifaces
+PKG_HASH:=0de901e592b77b863443f345c7d81a0c8fb3e7dacfcc3caa0f3a9c1e1a8d8d1e
+
+include $(INCLUDE_DIR)/../feeds/packages/lang/python/pypi.mk
+include $(INCLUDE_DIR)/package.mk
+include $(TOPDIR)/../feeds/packages/lang/python/python3-package.mk
+
+define Package/python3-netifaces
+  SECTION:=lang
+  CATEGORY:=Languages
+  SUBMENU:=Python
+  TITLE:=Portable network interface information
+  URL:=https://pypi.org/project/netifaces/
+  DEPENDS:=+python3
+endef
+
+define Package/python3-netifaces/description
+Portable access to network interfaces from Python
+endef
+
+$(eval $(call Py3Package,python3-netifaces))
+$(eval $(call BuildPackage,python3-netifaces))
+EOF
