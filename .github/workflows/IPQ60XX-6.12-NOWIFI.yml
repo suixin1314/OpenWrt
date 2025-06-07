@@ -52,6 +52,7 @@ jobs:
         sudo -E apt-get -y clean
         sudo timedatectl set-timezone "$TZ"
         sudo apt install python3 pkg-config ninja-build clang
+        sudo apt install build-essential curl pkg-config libssl-dev git python3 cmake
 
     - name: Combine Disks(合并磁盘)
       uses: easimon/maximize-build-space@master
