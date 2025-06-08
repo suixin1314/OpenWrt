@@ -93,14 +93,6 @@ jobs:
         sudo swapon /swapfile
         free -h
 
-    - name: Cache Toolchain(缓存工具链)
-      if: env.CACHE_TOOLCHAIN == 'true'
-      uses: HiGarfield/cachewrtbuild@main
-      with:
-        ccache: false
-        mixkey: ${{ env.SOURCE_REPO }}-${{ env.REPO_BRANCH }}-${{ env.DEVICE_TARGET }}-${{ env.DEVICE_SUBTARGET }}
-        prefix: ${{ env.OPENWRT_PATH }}
-
     - name: Load custom feeds
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
@@ -144,7 +136,6 @@ jobs:
     - name: Check Space Usage(检查空间使用情况)
       if: (!cancelled())
       run: |
-        df -hT
         echo "--------------------------硬盘信息--------------------------"
         echo "硬盘数量：$(ls /dev/sd* | grep -v [1-9] | wc -l)" && df -hT
 
