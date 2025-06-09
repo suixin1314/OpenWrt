@@ -30,10 +30,7 @@ echo 'src-git OpenClash https://github.com/vernesong/OpenClash.git' >> feeds.con
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 
-rm -rf feeds/packages/net/msd_lite
-rm -rf package/feeds/luci/luci-app-msd_lite
-rm -rf feeds/luci/applications/luci-app-netdata
-rm -rf feeds/luci/applications/luci-app-serverchan
+
 
 # msd_lite
 git clone --depth=1 https://github.com/ximiTech/luci-app-msd_lite package/luci-app-msd_lite
