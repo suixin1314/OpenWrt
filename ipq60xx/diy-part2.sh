@@ -38,7 +38,8 @@ function git_sparse_clone() {
   cd .. && rm -rf $repodir
 }
 
-
+#rust编译问题
+sed -i 's/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/' feeds/packages/lang/rust/Makefile
 
 
 
