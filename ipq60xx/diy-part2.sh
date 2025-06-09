@@ -40,7 +40,7 @@ function git_sparse_clone() {
 
 #rust编译问题
 sed -i 's/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/' feeds/packages/lang/rust/Makefile
-
+sed -i 's/CONFIG_PACKAGE_mqttled=y/# CONFIG_PACKAGE_mqttled is not set/' .config
 
 
 
