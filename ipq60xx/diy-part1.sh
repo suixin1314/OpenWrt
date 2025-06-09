@@ -39,4 +39,4 @@ rm -rf feeds/luci/applications/luci-app-serverchan
 git clone --depth=1 https://github.com/ximiTech/luci-app-msd_lite package/luci-app-msd_lite
 git clone --depth=1 https://github.com/ximiTech/msd_lite package/msd_lite
 
-sed -i 's/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/' feeds/packages/lang/rust/Makefile
+
