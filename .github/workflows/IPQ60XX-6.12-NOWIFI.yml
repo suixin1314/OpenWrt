@@ -120,8 +120,7 @@ jobs:
         make download -j$(nproc)
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
-        rm -rf feeds/packages/mqttled
-        rm -rf feeds/packages/shadow
+
 
     - name: Compile Firmware(开始编译固件)
       id: compile
