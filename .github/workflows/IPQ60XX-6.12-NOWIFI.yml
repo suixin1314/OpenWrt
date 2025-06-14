@@ -17,7 +17,7 @@ env:
   CLASH_KERNEL: amd64
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: true
-  FIRMWARE_RELEASE: true
+  FIRMWARE_RELEASE: 
   FIRMWARE_TAG: IPQ60XX-6.12-NOWIFI
   TZ: Asia/Shanghai
 
@@ -153,7 +153,6 @@ jobs:
         cat sha256sums
         cp $OPENWRT_PATH/.config build.config
         tar -zcf Packages.tar.gz packages
-        rm -rf packages feeds.buildinfo version.buildinfo
         echo "FIRMWARE_PATH=$PWD" >> $GITHUB_ENV
 
     - name: Upload Firmware To Artifact(将固件上传到Artifact)
