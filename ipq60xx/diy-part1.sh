@@ -22,7 +22,7 @@ echo "src-git helloworld https://github.com/fw876/helloworld.git" >> feeds.conf.
 #echo 'src-git modemfeed https://github.com/koshev-msk/modemfeed.git' >> feeds.conf.default
 #echo 'src-git UA3F https://github.com/SunBK201/UA3F.git' >> feeds.conf.default
 echo 'src-git OpenClash https://github.com/vernesong/OpenClash.git' >> feeds.conf.default
-#echo 'src-git qmodem https://github.com/FUjr/QModem.git' >> feeds.conf.default
+echo 'src-git qmodem https://github.com/FUjr/QModem.git' >> feeds.conf.default
 
 #添加passwall的包
 #git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
