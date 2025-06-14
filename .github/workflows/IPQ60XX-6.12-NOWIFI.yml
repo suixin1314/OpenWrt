@@ -7,10 +7,10 @@ on:
 env:
   REPO_URL: https://github.com/LiBwrt/openwrt-6.x.git
   REPO_BRANCH: kernel-6.12
-  FEEDS_CONF: ipq60xx/6.12-nowifi.config
-  CONFIG_FILE: ipk/.config
-  DIY_P1_SH: ipq60xx/diy-part1.sh
-  DIY_P2_SH: ipq60xx/diy-part2.sh
+  FEEDS_CONF: feeds.conf.default
+  CONFIG_FILE: ipq6000/6.12-nowifi.config
+  DIY_P1_SH: ipq6000/diy-part1.sh
+  DIY_P2_SH: ipq6000/diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
