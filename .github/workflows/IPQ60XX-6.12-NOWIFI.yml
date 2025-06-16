@@ -138,7 +138,7 @@ jobs:
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
       with:
         name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
-        path: $OPENWRT_PATH/bin
+        path: ${{ env.OPENWRT_PATH }}/bin
 
     - name: Organize files
       id: organize
