@@ -15,7 +15,7 @@ env:
   DIY_P2_SH: ipq60xx/diy-part2.sh
   CLASH_KERNEL: amd64
   CACHE_TOOLCHAIN: true
-  UPLOAD_BIN_DIR: false
+  UPLOAD_BIN_DIR: true
   FIRMWARE_RELEASE: true
   FIRMWARE_TAG: IPQ60XX-6.12-NOWIFI
   TZ: Asia/Shanghai
