@@ -67,7 +67,6 @@ env:
   UPLOAD_TAG_NAME: 7981
   REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
   REPO_BRANCH: openwrt-21.02
-  FEEDS_CONF: 7981/feeds.conf.default
   CONFIG_FILE: 7981/7981.config
   DIY_P1_SH: 7981/diy-part1.sh
   DIY_P2_SH: 7981/diy-part2.sh
@@ -127,7 +126,6 @@ jobs:
 
     - name: 加载feeds.conf.default & DIY_P1_SH
       run: |
-        [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
         chmod +x $DIY_P1_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
