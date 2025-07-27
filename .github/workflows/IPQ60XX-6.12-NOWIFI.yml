@@ -56,6 +56,7 @@ jobs:
         sudo apt install build-essential curl pkg-config libssl-dev git python3 cmake ninja-build gcc-multilib libc6-dev-i386
         sudo bash -c 'bash <(curl -s https://build-scripts.immortalwrt.org/init_build_environment.sh)'
         sudo apt install clang lldb lld clangd
+
                 
     - name: Combine Disks(合并磁盘)
       uses: easimon/maximize-build-space@master
