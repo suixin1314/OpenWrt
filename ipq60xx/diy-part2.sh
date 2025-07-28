@@ -34,5 +34,14 @@ rm -rf feeds/packages/shadow
 #rust编译问题
 sed -i 's/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/' feeds/packages/lang/rust/Makefile
 
+rm -rf feeds/packages/net/{xray-core,v2ray-geodata,sing-box,chinadns-ng,dns2socks,hysteria,ipt2socks,microsocks,naiveproxy,shadowsocks-libev,shadowsocks-rust,shadowsocksr-libev,simple-obfs,tcping,trojan-plus,tuic-client,v2ray-plugin,xray-plugin,geoview,shadow-tls}
+git clone https://github.com/xiaorouji/openwrt-passwall-packages package/passwall-packages
 
+# 移除 openwrt feeds 过时的luci版本
+rm -rf feeds/luci/applications/luci-app-passwall
+git clone https://github.com/xiaorouji/openwrt-passwall package/passwall-luci
+
+# 更新 golang 1.25 版本
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/lang/golang
 
