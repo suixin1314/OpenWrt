@@ -5,19 +5,19 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/suixin1314/openwrt-ipq
-  REPO_BRANCH: 24.10-nss
+  REPO_URL: https://github.com/wackejohn/openwrt
+  REPO_BRANCH: qualcommax_6.12
   #REPO_BRANCH: 24.10-6.12
   #REPO_BRANCH: k6.12-nss
-  CONFIG_FILE: ipq60xx/6.6.config
+  CONFIG_FILE: ipq807x/.config
   FEEDS_CONF: ipq807x/feeds.conf.default
-  DIY_P1_SH: ipq60xx/diy-part1.sh
-  DIY_P2_SH: ipq60xx/diy-part2.sh
+  DIY_P1_SH: ipq807x/diy-part1.sh
+  DIY_P2_SH: ipq807x/diy-part2.sh
   CLASH_KERNEL: amd64
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: true
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: IPQ60XX-6.12-NOWIFI
+  FIRMWARE_TAG: IPQ807x
   TZ: Asia/Shanghai
 
 jobs:
