@@ -5,9 +5,10 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/suixin1314/openwrt-6.12
-  REPO_BRANCH: k6.12-nss
-  #REPO_BRANCH: 24.10-6.12
+  #REPO_URL: https://github.com/suixin1314/openwrt-6.12
+  REPO_URL: https://github.com/wackejohn/openwrt/
+  #REPO_BRANCH: k6.12-nss
+  REPO_BRANCH: qualcommax_6.12
   #REPO_BRANCH: k6.12-nss
   CONFIG_FILE: ipq807x/.config
   DIY_P1_SH: ipq807x/diy-part1.sh
