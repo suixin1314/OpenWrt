@@ -71,10 +71,6 @@ jobs:
         git clone --depth 1 -b $REPO_BRANCH $REPO_URL openwrt
         cd openwrt
         echo "OPENWRT_PATH=$PWD" >> $GITHUB_ENV
-        sudo rm -rf target/linux/qualcommax
-        git clone --depth 1 -b kernel-6.6 https://github.com/suixin1314/LiBwrt-openwrt-6.x openwrt2
-        cp -r openwrt2/target/linux/qualcommax target/linux/
-        rm -rf openwrt2
 
     - name: Generate Variables(生成变量)
       run: |
