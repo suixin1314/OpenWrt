@@ -52,8 +52,9 @@ jobs:
         sudo -E apt-get -y autoremove --purge
         sudo -E apt-get -y clean
         sudo timedatectl set-timezone "$TZ"
-        sudo apt install python3 pkg-config ninja-build clang
-        sudo apt install build-essential curl pkg-config libssl-dev git python3 cmake ninja-build gcc-multilib libc6-dev-i386
+        sudo apt install -y python3 pkg-config ninja-build clang
+        sudo apt install -y libcrypt1
+        sudo apt install -y build-essential curl pkg-config libssl-dev git python3 cmake ninja-build gcc-multilib libc6-dev-i386
         
                 
     - name: Combine Disks(合并磁盘)
