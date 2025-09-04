@@ -33,10 +33,4 @@ git clone https://github.com/lwb1978/openwrt-gecoosac package/openwrt-gecoosac
 #添加passwall的包
 #git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
 
-export GIT_AUTHOR_NAME="Test User"
-export GIT_AUTHOR_EMAIL="test@example.com"
-export GIT_COMMITTER_NAME="Test User"
-export GIT_COMMITTER_EMAIL="test@example.com"
-git remote add upstream https://github.com/LiBwrt/openwrt-6.x
-git fetch upstream
-git merge upstream/k6.12-nss
+
