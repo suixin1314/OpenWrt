@@ -33,4 +33,5 @@ git clone https://github.com/lwb1978/openwrt-gecoosac package/openwrt-gecoosac
 #添加passwall的包
 #git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
 
+src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main
 
