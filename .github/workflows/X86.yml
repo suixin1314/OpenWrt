@@ -10,15 +10,15 @@ env:
   #REPO_BRANCH: 24.10-6.12
   #REPO_BRANCH: k6.12-nss
   #REPO_BRANCH: 24.10-nss
-  CONFIG_FILE: x86/.config
+  CONFIG_FILE: X86/x86.config
   FEEDS_CONF: feeds.conf.default
-  DIY_P1_SH: x86/diy-part1.sh
-  DIY_P2_SH: x86/diy-part2.sh
+  DIY_P1_SH: X86/diy-part1.sh
+  DIY_P2_SH: X86/diy-part2.sh
   CLASH_KERNEL: amd64
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: true
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: x86
+  FIRMWARE_TAG: X86
   TZ: Asia/Shanghai
 
 jobs:
