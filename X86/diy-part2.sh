@@ -53,4 +53,6 @@ rm -rf feeds/luci/luci-app-appfilter
 #git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 #./scripts/feeds install -a 
 
+curl -sSL https://raw.githubusercontent.com/chenmozhijin/turboacc/luci/add_turboacc.sh -o add_turboacc.sh && bash add_turboacc.sh
+
 #cp $GITHUB_WORKSPACE/RAX3000M-eMMC_XR30-eMMC-hanwckf/999-chanage-default-leaseduration.patch $OPENWRT_PATH/feeds/packages/net/miniupnpd/patches/
