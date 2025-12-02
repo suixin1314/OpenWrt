@@ -34,7 +34,6 @@ rm -rf feeds/packages/shadow
 #rust编译问题
 sed -i 's/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/' feeds/packages/lang/rust/Makefile
 
-curl -sSL https://raw.githubusercontent.com/chenmozhijin/turboacc/luci/add_turboacc.sh -o add_turboacc.sh && bash add_turboacc.sh
 
 # 更新 golang 1.25 版本
 rm -rf feeds/packages/lang/golang
