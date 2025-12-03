@@ -31,9 +31,9 @@ sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.
 #./scripts/feeds install -a -f -p qmodem
 
 #替换golang
-rm -rf feeds/packages/lang/golang
-git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
-./scripts/feeds install -a 
+#rm -rf feeds/packages/lang/golang
+#git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
+#./scripts/feeds install -a 
 
 # 移除要替换的包
 rm -rf feeds/packages/net/msd_lite
@@ -54,5 +54,7 @@ sed -i 's/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/' 
 #./scripts/feeds install -a 
 
 curl -sSL https://raw.githubusercontent.com/chenmozhijin/turboacc/luci/add_turboacc.sh -o add_turboacc.sh && bash add_turboacc.sh
+
+
 
 #cp $GITHUB_WORKSPACE/RAX3000M-eMMC_XR30-eMMC-hanwckf/999-chanage-default-leaseduration.patch $OPENWRT_PATH/feeds/packages/net/miniupnpd/patches/
