@@ -31,9 +31,9 @@ sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.
 #./scripts/feeds install -a -f -p qmodem
 
 #替换golang
-#rm -rf feeds/packages/lang/golang
-#git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
-#./scripts/feeds install -a 
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/kenzok8/golang -b 1.25 feeds/packages/lang/golang
+./scripts/feeds install -a 
 
 # 移除要替换的包
 rm -rf feeds/packages/net/msd_lite
