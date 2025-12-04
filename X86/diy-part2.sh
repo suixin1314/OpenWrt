@@ -21,10 +21,6 @@ rm -rf feeds/packages/net/open-app-filter
 #mkdir -p feeds/luci/applications/luci-app-openclash/root/etc/openclash/core
 #mv /tmp/clash feeds/luci/applications/luci-app-openclash/root/etc/openclash/core/clash >/dev/null 2>&1
 #rm -rf /tmp/clash.tar.gz >/dev/null 2>&1
-##-----------------Delete DDNS's examples-----------------
-sed -i '/myddns_ipv4/,$d' feeds/packages/net/ddns-scripts/files/etc/config/ddns
-##-----------------Manually set CPU frequency for MT7981B-----------------
-sed -i '/"mediatek"\/\*|\"mvebu"\/\*/{n; s/.*/\tcpu_freq="1.65GHz" ;;/}' package/emortal/autocore/files/generic/cpuinfo
 # TTYD 免登录
 sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.config
 
@@ -53,8 +49,4 @@ sed -i 's/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/' 
 #git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 #./scripts/feeds install -a 
 
-curl -sSL https://raw.githubusercontent.com/chenmozhijin/turboacc/luci/add_turboacc.sh -o add_turboacc.sh && bash add_turboacc.sh
 
-
-
-#cp $GITHUB_WORKSPACE/RAX3000M-eMMC_XR30-eMMC-hanwckf/999-chanage-default-leaseduration.patch $OPENWRT_PATH/feeds/packages/net/miniupnpd/patches/
