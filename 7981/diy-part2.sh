@@ -30,13 +30,9 @@ sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.
 
 #./scripts/feeds install -a -f -p qmodem
 
+
+# 更新 golang 1.25 版本
 rm -rf feeds/packages/lang/golang
-git clone https://github.com/kenzok8/golang -b 1.25 feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/lang/golang
 
 
-
-#rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns}
-#rm -rf feeds/packages/utils/v2dat
-#rm -rf feeds/packages/lang/golang
-#git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
-#./scripts/feeds install -a 
