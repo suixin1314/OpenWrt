@@ -46,4 +46,4 @@ git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/l
 
 
 #rust编译问题
-sed -i 's/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/' feeds/packages/lang/rust/Makefile
+#sed -i 's/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/' feeds/packages/lang/rust/Makefile
