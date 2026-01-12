@@ -34,15 +34,15 @@ sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.
 
 
 # 移除 openwrt feeds 过时的luci版本
-rm -rf feeds/luci/applications/luci-app-passwall
-git clone https://github.com/xiaorouji/openwrt-passwall package/passwall-luci
-git clone https://github.com/xiaorouji/openwrt-passwall2 package/passwall2-luci
+# rm -rf feeds/luci/applications/luci-app-passwall
+# git clone https://github.com/xiaorouji/openwrt-passwall package/passwall-luci
+# git clone https://github.com/xiaorouji/openwrt-passwall2 package/passwall2-luci
 
 
 
-# 更新 golang 1.25 版本
-rm -rf feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/lang/golang
+# # 更新 golang 1.25 版本
+# rm -rf feeds/packages/lang/golang
+# git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/lang/golang
 
 
 #rust编译问题
