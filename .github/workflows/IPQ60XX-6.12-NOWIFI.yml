@@ -103,7 +103,7 @@ jobs:
         cd /$OPENWRT_PATH
         $GITHUB_WORKSPACE/$DIY_P2_SH
 
-    - name: Advanced Overclocking for IPQ6010 (1.8GHz + Voltage + Performance)
+    - name: Advanced Overclocking for IPQ6010 (1.8GHz)
       run: |
           DTS_FILE="target/linux/qualcommax/files/arch/arm64/boot/dts/qcom/ipq6018-common.dtsi"
           # 1. 强制解锁 1.8GHz 和 1.6GHz 的硬件限制
