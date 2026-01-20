@@ -104,6 +104,13 @@ jobs:
         chmod +x $DIY_P2_SH
         cd /$OPENWRT_PATH
         $GITHUB_WORKSPACE/$DIY_P2_SH
+
+    - name: Advanced Overclocking for IPQ6010 (1.8GHz + Voltage + Performance)
+      run: |
+          DTS_FILE="target/linux/qualcommax/files/arch/arm64/boot/dts/qcom/ipq6018-common.dtsi"
+          # 1. 强制解锁 1.8GHz 和 1.6GHz 的硬件限制
+          sed -i '/opp-1608000000 {/,/};/s/opp-supported-hw = <0x1>;/opp-supported-hw = <0xf>;/' $DTS_FILE
+          sed -i '/opp-1800000000 {/,/};/s/opp-supported-hw = <0x1>;/opp-supported-hw = <0xf>;/' $DTS_FILE
         
     - name: Download DL Package(下载DL软件包)
       run: |
