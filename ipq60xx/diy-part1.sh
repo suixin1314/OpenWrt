@@ -16,7 +16,8 @@
 # Add a feed source
 echo " " >> feeds.conf.default
 echo "src-git helloworld https://github.com/fw876/helloworld.git;main" >> feeds.conf.default
-echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main" >> feeds.conf.default
+# echo 'src-git passwall https://github.com/Openwrt-Passwall/openwrt-passwall' >>feeds.conf.default
+echo 'src-git passwall2 https://github.com/Openwrt-Passwall/openwrt-passwall2' >>feeds.conf.default
 echo "src-git OpenClash https://github.com/vernesong/OpenClash.git;master" >> feeds.conf.default
 
 # echo 'src-git qmodem https://github.com/FUjr/QModem.git' >> feeds.conf.default
