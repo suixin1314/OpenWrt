@@ -107,7 +107,7 @@ jobs:
 
     - name: Advanced Overclocking for IPQ6010 (1.8GHz)
       run: |
-          DTS_FILE="target/linux/qualcommax/files/arch/arm64/boot/dts/qcom/ipq6018-common.dtsi"
+          DTS_FILE="$OPENWRT_PATH/target/linux/qualcommax/files/arch/arm64/boot/dts/qcom/ipq6018-common.dtsi"
           # 1. 强制解锁 1.8GHz 和 1.6GHz 的硬件限制
           sed -i '/opp-1608000000 {/,/};/s/opp-supported-hw = <0x1>;/opp-supported-hw = <0xf>;/' $DTS_FILE
           sed -i '/opp-1800000000 {/,/};/s/opp-supported-hw = <0x1>;/opp-supported-hw = <0xf>;/' $DTS_FILE
